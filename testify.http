@@ -1,0 +1,25 @@
+### Hello 接口（GET）
+GET http://192.168.18.8:6162/hello
+Accept: application/json
+
+###
+
+### 登录接口（POST）成功
+POST http://192.168.18.8:6162/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "password"
+}
+
+###
+
+### 登录接口（POST）失败
+POST http://192.168.18.8:6162/login
+Content-Type: application/json
+
+{
+  "username": "wrong",
+  "password": "123456"
+}
