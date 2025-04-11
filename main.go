@@ -1,10 +1,12 @@
 package main
 
 import (
+	"DxServer/database"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	database.InitMongo("mongodb://localhost:27017/", "DxServer")
 	r := gin.Default()
 
 	// 定义一个GET请求路由
